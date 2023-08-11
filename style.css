@@ -1,0 +1,104 @@
+:root {
+  --primary-color: rgb(255 135 39);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto-Sans", sans-serif;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+br {
+  display: block;
+  content: "";
+  margin-top: 0;
+}
+
+.container {
+  outline: 5px solid black;
+  width: 250px;
+  height: 750px;
+  background-color: var(--primary-color);
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.warning {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  justify-content: center;
+  border-bottom: 5px solid rgb(0, 0, 0);
+  align-items: center;
+  padding: 0 5px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  height: 60%;
+}
+.warning_title {
+  flex: 8;
+  transform: scaleY(2.7);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.pre-warning {
+  display: flex;
+  font-size: 0.8rem;
+  background-color: aliceblue;
+  border-bottom: 5px solid rgb(0, 0, 0);
+  text-align: center;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+}
+.pre-warning > p {
+  margin: 0 15px;
+  transform: scaleY(1.3);
+}
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "⏶ ";
+}
+ul li {
+  margin: 8px 0 0 12px;
+}
+
+.instruction {
+  text-align: left;
+  font-size: 0.8em;
+}
+.instruction__title {
+  font-weight: 900;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 0.85rem;
+}
+.instruction__second_title {
+  font-weight: 400;
+  margin-top: 2px;
+  text-align: center;
+  padding: 0 5px;
+  line-height: 1.2;
+  font-size: 0.85rem;
+}
